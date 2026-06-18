@@ -141,7 +141,24 @@ section {
 }
 
 .primary { background: var(--violet); color: white; }
-.secondary { background: var(--glass); backdrop-filter: var(--blur); }
+.btn-secondary{
+    border: 4px solid #9fd8dd;
+    color: #2f3148;
+
+    padding: 18px 40px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.btn-secondary:hover{
+    background: #9fd8dd;
+}
+
 
 /* ------------------ */
 /* ABOUT              */
