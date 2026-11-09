@@ -415,13 +415,18 @@ Clique em uma pastinha para visitar um projeto.
 
         <div class="folder-body">
 
-            💡
+            📱
 
-            <h4>Em breve</h4>
+            <h4>Estágio</h4>
 
-            <span>Novo Projeto</span>
+            <span>Kotlin + Android</span>
 
         </div>
+
+        <button type="button"
+                class="folder-btn"
+                popovertarget="estagio"
+                aria-label="Ver projeto do estágio"></button>
 
     </div>
 
@@ -442,6 +447,46 @@ Clique em uma pastinha para visitar um projeto.
         </div>
 
     </div>
+
+</div>
+
+<!-- Internship project card (opened by folder 5) -->
+
+<div id="estagio" class="internship-card" popover>
+
+    <button type="button"
+            class="internship-close"
+            popovertarget="estagio"
+            popovertargetaction="hide"
+            aria-label="Fechar">✕</button>
+
+    <span class="internship-tag">📱 Estágio • a decorrer</span>
+
+    <h3>Gradual Musical Alarm Clock</h3>
+
+    <p>
+        Aplicação Android desenvolvida durante o meu estágio:
+        um despertador nativo que aumenta gradualmente
+        o volume da música quando o alarme toca.
+    </p>
+
+    <h4>O que fiz</h4>
+
+    <p>
+        Desenvolvimento Android, localização, gestão de dependências,
+        testes, CI/CD, agendamento de alarmes e gestão de áudio.
+    </p>
+
+    <div class="tags">
+        <span>Kotlin</span>
+        <span>Android SDK</span>
+        <span>Gradle</span>
+        <span>JUnit</span>
+        <span>Robolectric</span>
+        <span>Git</span>
+    </div>
+
+    <p class="internship-private">🔒 Código privado</p>
 
 </div>
 
