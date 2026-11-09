@@ -333,6 +333,12 @@ margin-bottom:20px;
 color:#666;
 }
 
+.about-text .about-interests{
+font-size:15px;
+color:#999;
+margin-top:10px;
+}
+
 .about-cards{
 flex:1;
 display:grid;
@@ -390,13 +396,15 @@ padding:140px 8%;
 }
 
 .skills-container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
 gap:30px;
 
 }
 
 .skill-box{
+flex:0 1 280px;
 background:white;
 padding:35px;
 border-radius:30px;
@@ -451,6 +459,10 @@ background:#ffbf57;
 
 .learning span{
 background:#b694ff;
+}
+
+.mobile span{
+background:#8ed6a6;
 }
 
 /*==========RESPONSIVO=============*/
