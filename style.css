@@ -627,7 +627,7 @@ font-size:14px;
 color:#666;
 }
 
-/* Invisible button over folder 5 that opens the internship card */
+/* Invisible button over a folder that opens its project card */
 .folder-btn{
 position:absolute;
 inset:0;
@@ -637,26 +637,27 @@ border-radius:18px;
 cursor:pointer;
 }
 
-/*=========INTERNSHIP CARD (popover)=========*/
+/*=========PROJECT CARDS (popover)=========*/
 
-.internship-card{
+.project-card{
+--accent:#ff9d7b;
 margin:auto;
 width:min(520px,90vw);
 padding:40px;
 border:none;
-border-top:8px solid #ff9d7b;
+border-top:8px solid var(--accent);
 border-radius:30px;
 background:white;
 color:#2f3148;
 box-shadow:0 20px 45px rgba(0,0,0,.18);
 }
 
-.internship-card::backdrop{
+.project-card::backdrop{
 background:rgba(77,53,87,.25);
 backdrop-filter:blur(4px);
 }
 
-.internship-close{
+.project-close{
 position:absolute;
 top:18px;
 right:22px;
@@ -667,7 +668,7 @@ color:#999;
 cursor:pointer;
 }
 
-.internship-tag{
+.project-tag{
 display:inline-block;
 background:#ffe7ef;
 padding:8px 16px;
@@ -677,34 +678,45 @@ font-weight:600;
 font-size:14px;
 }
 
-.internship-card h3{
+.project-card h3{
 margin:15px 0;
 font-size:38px;
 font-family:'Cormorant Garamond',serif;
 color:#a63b74;
 }
 
-.internship-card h4{
+.project-card h4{
 margin:20px 0 8px;
 color:#444;
 }
 
-.internship-card p{
+.project-card p{
 color:#666;
 line-height:1.7;
 }
 
-.internship-card .tags{
+.project-card .tags{
 margin-top:22px;
 }
 
-.internship-card .tags span{
-background:#ff9d7b;
+.project-card .tags span{
+background:var(--accent);
 padding:10px 16px;
 font-size:14px;
 }
 
-.internship-card .internship-private{
+.project-card .project-link{
+display:inline-block;
+margin-top:24px;
+}
+
+/* Card accent matches its folder */
+.card-pink{ --accent:#ef8db0; }
+.card-blue{ --accent:#86d3dd; }
+.card-yellow{ --accent:#ffbf57; }
+.card-purple{ --accent:#bca2ff; }
+
+.project-card .project-note{
 margin-top:20px;
 font-size:14px;
 color:#999;

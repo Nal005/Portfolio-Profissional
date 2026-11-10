@@ -328,7 +328,7 @@ Desenvolvimento Android com Kotlin (a decorrer).
 <h2>Meus Projetos</h2>
 
 <p>
-Clique em uma pastinha para visitar um projeto.
+Clique em uma pastinha para conhecer um projeto.
 </p>
 
 </div>
@@ -349,9 +349,7 @@ Clique em uma pastinha para visitar um projeto.
 
     <!-- Pasta 1 -->
 
-    <a href="https://nal005.github.io/CookBook/"
-       target="_blank"
-       class="folder folder1">
+    <div class="folder folder1">
 
         <div class="folder-top"></div>
 
@@ -365,13 +363,16 @@ Clique em uma pastinha para visitar um projeto.
 
         </div>
 
-    </a>
+        <button type="button"
+                class="folder-btn"
+                popovertarget="cookbook"
+                aria-label="Ver detalhes do projeto CookBook"></button>
+
+    </div>
 
     <!-- Pasta 2 -->
 
-    <a href="https://biblioteca.sindces.pt/index.php"
-       target="_blank"
-       class="folder folder2">
+    <div class="folder folder2">
 
         <div class="folder-top"></div>
 
@@ -385,13 +386,16 @@ Clique em uma pastinha para visitar um projeto.
 
         </div>
 
-    </a>
+        <button type="button"
+                class="folder-btn"
+                popovertarget="biblioteca"
+                aria-label="Ver detalhes do projeto Biblioteca"></button>
+
+    </div>
 
     <!-- Pasta 3 -->
 
-    <a href="https://movieapp.nichesite.org/"
-       target="_blank"
-       class="folder folder3">
+    <div class="folder folder3">
 
         <div class="folder-top"></div>
 
@@ -405,13 +409,16 @@ Clique em uma pastinha para visitar um projeto.
 
         </div>
 
-    </a>
+        <button type="button"
+                class="folder-btn"
+                popovertarget="movie-app"
+                aria-label="Ver detalhes do projeto Movie App"></button>
+
+    </div>
 
     <!-- Pasta 4 -->
 
-    <a href="https://felipebarbosaiefp.github.io/Fantastic.github.io/"
-       target="_blank"
-       class="folder folder4">
+    <div class="folder folder4">
 
         <div class="folder-top"></div>
 
@@ -425,7 +432,12 @@ Clique em uma pastinha para visitar um projeto.
 
         </div>
 
-    </a>
+        <button type="button"
+                class="folder-btn"
+                popovertarget="word-game"
+                aria-label="Ver detalhes do projeto Word Game"></button>
+
+    </div>
 
     <!-- Pasta 5 -->
 
@@ -470,17 +482,130 @@ Clique em uma pastinha para visitar um projeto.
 
 </div>
 
-<!-- Internship project card (opened by folder 5) -->
+<!-- Project cards (opened by the folders) -->
 
-<div id="estagio" class="internship-card" popover>
+<div id="cookbook" class="project-card card-pink" popover>
 
     <button type="button"
-            class="internship-close"
+            class="project-close"
+            popovertarget="cookbook"
+            popovertargetaction="hide"
+            aria-label="Fechar">✕</button>
+
+    <span class="project-tag">📖 Projeto web</span>
+
+    <h3>CookBook</h3>
+
+    <p>
+        Site de receitas responsivo para organizar receitas simples,
+        com ingredientes claros e modo de preparação passo a passo.
+    </p>
+
+    <div class="tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+    </div>
+
+    <a href="https://nal005.github.io/CookBook/"
+       target="_blank"
+       class="btn-primary project-link">Ver projeto ↗</a>
+
+</div>
+
+<div id="biblioteca" class="project-card card-blue" popover>
+
+    <button type="button"
+            class="project-close"
+            popovertarget="biblioteca"
+            popovertargetaction="hide"
+            aria-label="Fechar">✕</button>
+
+    <span class="project-tag">📚 Projeto web</span>
+
+    <h3>Gestão da Biblioteca</h3>
+
+    <p>
+        Sistema de gestão de uma biblioteca, com listagens de livros,
+        autores e géneros guardados numa base de dados.
+    </p>
+
+    <div class="tags">
+        <span>PHP</span>
+        <span>SQL</span>
+    </div>
+
+    <a href="https://biblioteca.sindces.pt/index.php"
+       target="_blank"
+       class="btn-primary project-link">Ver projeto ↗</a>
+
+</div>
+
+<div id="movie-app" class="project-card card-yellow" popover>
+
+    <button type="button"
+            class="project-close"
+            popovertarget="movie-app"
+            popovertargetaction="hide"
+            aria-label="Fechar">✕</button>
+
+    <span class="project-tag">🎬 Projeto web</span>
+
+    <h3>Movie App</h3>
+
+    <p>
+        Aplicação para pesquisar filmes e ver o cartaz, a sinopse
+        e a avaliação de cada um, com dados da API do TMDB.
+    </p>
+
+    <div class="tags">
+        <span>PHP</span>
+        <span>API TMDB</span>
+    </div>
+
+    <p class="project-note">⏳ Link indisponível de momento</p>
+
+</div>
+
+<div id="word-game" class="project-card card-purple" popover>
+
+    <button type="button"
+            class="project-close"
+            popovertarget="word-game"
+            popovertargetaction="hide"
+            aria-label="Fechar">✕</button>
+
+    <span class="project-tag">🎮 Projeto em grupo</span>
+
+    <h3>Word Game</h3>
+
+    <p>
+        «NOMES» é um jogo de adivinhar palavras inspirado no Wordle,
+        com 6 tentativas e cores para cada letra.
+        Tem os modos Dueto e Quarteto.
+    </p>
+
+    <div class="tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+    </div>
+
+    <a href="https://felipebarbosaiefp.github.io/Fantastic.github.io/"
+       target="_blank"
+       class="btn-primary project-link">Ver projeto ↗</a>
+
+</div>
+
+<div id="estagio" class="project-card" popover>
+
+    <button type="button"
+            class="project-close"
             popovertarget="estagio"
             popovertargetaction="hide"
             aria-label="Fechar">✕</button>
 
-    <span class="internship-tag">📱 Estágio • a decorrer</span>
+    <span class="project-tag">📱 Estágio • a decorrer</span>
 
     <h3>Gradual Musical Alarm Clock</h3>
 
@@ -506,7 +631,7 @@ Clique em uma pastinha para visitar um projeto.
         <span>Git</span>
     </div>
 
-    <p class="internship-private">🔒 Código privado</p>
+    <p class="project-note">🔒 Código privado</p>
 
 </div>
 
