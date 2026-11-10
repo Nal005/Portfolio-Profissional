@@ -643,6 +643,8 @@ cursor:pointer;
 --accent:#ff9d7b;
 margin:auto;
 width:min(520px,90vw);
+max-height:90dvh;
+overflow-y:auto;
 padding:40px;
 border:none;
 border-top:8px solid var(--accent);
